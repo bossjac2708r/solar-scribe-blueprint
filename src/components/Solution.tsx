@@ -1,4 +1,5 @@
 import { Target, FileText, MessageCircle, Phone, Calendar } from "lucide-react";
+import leadSystemImage from "@/assets/leadtitan-info.png";
 
 const Solution = () => {
   const steps = [
@@ -60,6 +61,15 @@ const Solution = () => {
                 <p className="text-sm text-gray-600">{step.description}</p>
               </div>
             ))}
+          </div>
+
+          {/* System Overview Image */}
+          <div className="mt-16 max-w-6xl mx-auto">
+            <img 
+              src={leadSystemImage} 
+              alt="LeadTitan System Overview" 
+              className="w-full h-auto rounded-2xl shadow-2xl border border-[#FFD700]/20 hover:scale-[1.02] transition-transform duration-300"
+            />
           </div>
         </div>
       </div>
