@@ -9,7 +9,6 @@ import AutomatedFollowup from "@/components/AutomatedFollowup";
 import CallTranscripts from "@/components/CallTranscripts";
 import Results from "@/components/Results";
 import Guarantee from "@/components/Guarantee";
-import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -29,7 +28,6 @@ const Index = () => {
       <CallTranscripts />
       <Results />
       <Guarantee />
-      <Pricing />
       <FAQ />
       <Contact />
       <Footer />
