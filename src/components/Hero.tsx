@@ -6,9 +6,6 @@ const Hero = () => {
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const openCalendly = () => {
-    window.open("https://calendly.com/viplav/15min", "_blank");
-  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
@@ -36,14 +33,6 @@ const Hero = () => {
               className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] hover:from-[#FFA500] hover:to-[#FFD700] text-black font-semibold text-lg px-8 py-6 shadow-2xl hover:scale-105 transition-transform"
             >
               Get My Custom Solar System
-            </Button>
-            <Button 
-              onClick={openCalendly}
-              size="lg"
-              variant="outline"
-              className="border-2 border-[#FFD700] text-gray-800 hover:bg-[#FFD700]/10 font-semibold text-lg px-8 py-6 shadow-xl hover:scale-105 transition-transform"
-            >
-              Book Strategy Call
             </Button>
           </div>
 

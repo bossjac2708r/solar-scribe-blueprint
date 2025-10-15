@@ -12,8 +12,9 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
-  const openCalendly = () => {
-    window.open("https://calendly.com/viplav/15min", "_blank");
+  const scrollToContact = () => {
+    const element = document.getElementById("contact");
+    element?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -35,6 +36,9 @@ const Header = () => {
             <button onClick={() => scrollToSection("features")} className="text-gray-700 hover:text-[#FFD700] transition-colors">
               Features
             </button>
+            <button onClick={() => scrollToSection("pricing")} className="text-gray-700 hover:text-[#FFD700] transition-colors">
+              Pricing
+            </button>
             <button onClick={() => scrollToSection("results")} className="text-gray-700 hover:text-[#FFD700] transition-colors">
               Results
             </button>
@@ -42,10 +46,10 @@ const Header = () => {
               Contact
             </button>
             <Button 
-              onClick={openCalendly}
+              onClick={scrollToContact}
               className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] hover:from-[#FFA500] hover:to-[#FFD700] text-black font-semibold px-6 animate-pulse"
             >
-              Book Call ⚡
+              Book Strategy Call ⚡
             </Button>
           </div>
 
@@ -67,6 +71,9 @@ const Header = () => {
             <button onClick={() => scrollToSection("features")} className="text-gray-700 hover:text-[#FFD700] transition-colors text-left">
               Features
             </button>
+            <button onClick={() => scrollToSection("pricing")} className="text-gray-700 hover:text-[#FFD700] transition-colors text-left">
+              Pricing
+            </button>
             <button onClick={() => scrollToSection("results")} className="text-gray-700 hover:text-[#FFD700] transition-colors text-left">
               Results
             </button>
@@ -74,10 +81,10 @@ const Header = () => {
               Contact
             </button>
             <Button 
-              onClick={openCalendly}
+              onClick={scrollToContact}
               className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] hover:from-[#FFA500] hover:to-[#FFD700] text-black font-semibold"
             >
-              Book Call ⚡
+              Book Strategy Call ⚡
             </Button>
           </div>
         )}

@@ -38,6 +38,11 @@ const Footer = () => {
                 </button>
               </li>
               <li>
+                <button onClick={() => scrollToSection("pricing")} className="text-gray-400 hover:text-[#FFD700] transition-colors">
+                  Pricing
+                </button>
+              </li>
+              <li>
                 <button onClick={() => scrollToSection("results")} className="text-gray-400 hover:text-[#FFD700] transition-colors">
                   Results
                 </button>
@@ -54,8 +59,9 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-400">
-              <li>Email: hello@leadtitan.com</li>
-              <li>Phone: +1 (555) 123-4567</li>
+              <li>leadtitan100@gmail.com</li>
+              <li>leadtitan101@gmail.com</li>
+              <li>leadtitan102@gmail.com</li>
             </ul>
           </div>
 
@@ -63,10 +69,13 @@ const Footer = () => {
           <div>
             <h3 className="font-bold mb-4">Ready to Scale?</h3>
             <button
-              onClick={() => window.open("https://calendly.com/viplav/15min", "_blank")}
+              onClick={() => {
+                const element = document.getElementById("contact");
+                element?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="bg-gradient-to-r from-[#FFD700] to-[#FFA500] hover:from-[#FFA500] hover:to-[#FFD700] text-black font-semibold px-6 py-3 rounded-lg transition-all hover:scale-105"
             >
-              Book Strategy Call
+              Get Started
             </button>
           </div>
         </div>
